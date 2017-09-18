@@ -19,6 +19,11 @@ let make _children => {
     let message = "Clicked " ^ string_of_int self.state.count ^ " times(s)";
     <div>
       <div
+        style=(ReactDOMRe.Style.make
+          color::"#444444"
+          fontSize::"68px"
+          ()
+        )
         onClick=(self.reduce (fun _event => Click))
         onSubmit=(self.reduce (fun _event => Toggle))>
         (ReasonReact.stringToElement "click me")

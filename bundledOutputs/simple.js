@@ -29475,6 +29475,10 @@
 	  newrecord[/* render */9] = (function (self) {
 	      var message = "Clicked " + (Pervasives.string_of_int(self[/* state */4][/* count */0]) + " times(s)");
 	      return React.createElement("div", undefined, React.createElement("div", {
+	                      style: {
+	                        color: "#444444",
+	                        fontSize: "68px"
+	                      },
 	                      onSubmit: Curry._1(self[/* reduce */3], (function () {
 	                              return /* Toggle */1;
 	                            })),
